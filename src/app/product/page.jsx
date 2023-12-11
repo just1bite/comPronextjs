@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Idcard from "../../aset/Idcard.jpg";
+import Idcard from "../../aset/idcard.jpg";
 import Spanduk from "../../aset/spanduk.jpg";
 import Emoney from "../../aset/emoney.jpg";
 import Kaos from "../../aset/baju.jpg";
@@ -10,7 +10,7 @@ import Gantungan from "../../aset/gantungan.jpg";
 import Kipas from "../../aset/Kipas.png";
 import Testimonials from "@/components/Testimonials";
 
-export default function page() {
+export default function Page() {
   const posts = [
     {
       title: "Mug",
@@ -79,6 +79,7 @@ export default function page() {
                 <Image
                   src={items.img}
                   className="w-screen-full h-50 rounded-t-md"
+                  alt={items.title}
                 />
 
                 <div className="pt-3 ml-4 mr-2 mb-3">

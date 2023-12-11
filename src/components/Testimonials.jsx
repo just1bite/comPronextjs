@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Testimonials() {
   const testimonials = [
@@ -44,7 +45,7 @@ export default function Testimonials() {
               <li key={idx} className="bg-gray-100 p-6 rounded-xl">
                 <figure>
                   <div className="flex items-center gap-x-4">
-                    <img
+                    <Image
                       alt="avatar testimonial"
                       src={item.avatar}
                       className="w-16 h-16 rounded-full"

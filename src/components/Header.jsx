@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Logo from "../aset/Logo.png";
+import Image from "next/image";
 
 export default function Header() {
   const [state, setState] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
         <div className="items-center px-4 max-w-screen-full mx-auto md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/">
-              <img
+              <Image
                 alt="SleeplessNight Logo"
                 src={Logo}
                 width={200}

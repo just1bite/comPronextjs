@@ -2,8 +2,9 @@
 import React from "react";
 import { getData } from "./data";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
-export default function page() {
+export default function Page() {
   const [data, setData] = useState([]);
   useEffect(() => {
     getData().then((res) => {
@@ -32,7 +33,7 @@ export default function page() {
               {data.map((item, idx) => (
                 <li key={idx}>
                   <div className="w-full h-60 sm:h-52 md:h-56">
-                    <img
+                    <Image
                       alt="Avatar Teams"
                       src={item.picture.large}
                       className="w-full h-full object-cover object-center shadow-md rounded-xl"

@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import { getData } from "../teams/data";
-export default function page() {
+export default function Page() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -59,9 +59,9 @@ export default function page() {
           </h3>
           <p className="text-gray-600 mt-3 text-justify">
             lLorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            industry. Lorem Ipsum has been the industry standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
           </p>
 
           <div className="mt-12">
@@ -69,7 +69,7 @@ export default function page() {
               {data.map((item, idx) => (
                 <li key={idx}>
                   <div className="w-24 h-24 mx-auto">
-                    <img
+                    <Image
                       alt="Avata About"
                       src={item.picture.large}
                       className="w-full h-full rounded-full"

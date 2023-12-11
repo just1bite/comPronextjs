@@ -84,7 +84,7 @@ export default function hero() {
               {data.map((item, idx) => (
                 <li key={idx}>
                   <div className="w-24 h-24 mx-auto px-1">
-                    <img
+                    <Image
                       alt="avatar"
                       src={item.avatar}
                       className=" w-max h-max rounded-full"
